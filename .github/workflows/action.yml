@@ -7,12 +7,12 @@ on:
 jobs:
   check-nginx-version:
     runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-nginx@v3
-          with:
-            nginx-version: '1.21.6'
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-nginx@v3
+        with:
+          nginx-version: '1.21.6'
 
-        - run: apt install nginx -y
+      - run: apt install nginx -y
 
-        - run: nginx --version
+      - run: nginx --version
