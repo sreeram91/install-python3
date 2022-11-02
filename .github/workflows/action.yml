@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: nginxinc/nginx-for-azure-deploy-action@v0.1.0
+      - uses: actions/setup-python@v4
         with:
-          nginx-version: '0.1.0'
+          nginx-version: '3.10'
 
-      - run: apt install nginx -y
+      - run: python3 install pip 
 
-      - run: nginx --version
+      - run: python -v
