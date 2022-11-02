@@ -1,4 +1,4 @@
-name: install nginx
+name: install python
 on:
   push:
     branches:
