@@ -13,6 +13,6 @@ jobs:
         with:
           nginx-version: '3.10'
 
-      - run: python3 install pip 
+      - run: apt-get install python3-pip
 
       - run: python -v
