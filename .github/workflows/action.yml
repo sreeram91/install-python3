@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-nginx@v3
+      - uses: nginxinc/nginx-for-azure-deploy-action@v0.1.0
         with:
           nginx-version: '1.21.6'
 
